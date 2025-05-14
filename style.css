@@ -1,0 +1,377 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root{
+    --color-primary-100: #f4f5ff;
+    --color-primary-200: #fafbff;
+    --color-primary-300: #d5dfff;
+    --color-primary-400: #e2dbfc;
+    --color-primary-500: #8c85ff;
+    --color-primary-600: #673de6;
+    --color-primary-700: #2f1c6a;
+    --color-primaty-800: #261559;
+    --color-primary-900: #1f1346;
+    --color-primary-1000: #1d1e20;
+}
+
+*{
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Navigation Section */
+.main-menu-container{
+    display: none;
+}
+
+.logo-hostinger{
+    padding: 16px 0px 16px 20px;
+}
+
+.img-logo-hostinger{
+    width: 147px;
+    height: 29px;
+    object-fit: cover;
+}
+
+.navigation-section{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw;
+    z-index: 1010;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(128, 128, 128, 0.1);
+}
+
+.buton-list{
+    display: flex;
+    padding: 16px 20px 16px 0px;
+    background: none;
+    border: none;
+}
+
+.icon-list{
+    font-size: 24px;
+    color: var(--color-primary-1000);
+}
+
+
+@media (min-width: 1024px){
+    .buton-list{
+        display: none;
+    }
+    
+    .navigation-section{
+        max-height: 88px;
+    }
+
+    .logo-hostinger{
+        padding: 29px 0 29px 40px;
+    }
+
+    .main-menu-container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px 40px;
+    }
+
+    .main-menu-left{
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+
+    .main-menu__options{
+        display: flex;
+        list-style: none;
+        gap: 32px;
+    }
+
+    .main-menu__option{
+        text-decoration: none;
+        background: none;
+        border: none;
+        font-size: 16px;
+        font-weight: 300;
+        color: var(--color-primary-1000);
+    }
+
+    .main-menu-right{
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .language{
+        display: flex;
+        align-items: center;
+        background: none;
+        border: none;
+        gap: 4px;
+    }
+
+    .language__img{
+        width: 32px;
+        height: 20px;
+    }
+
+    .language__select{
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--color-primary-1000);
+    }
+
+    .main-menu__button{
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--color-primary-1000);
+        border: 2px solid var(--color-primary-1000);
+        border-radius: 8px;
+        padding: 12px 16px;
+    }
+}
+
+/* Hero */
+.hero__container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 80px 16px 36px 16px;
+}
+
+.hero__info{
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.hero__heading{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.hero__title{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-primary-700);
+}
+
+.hero__subtitle{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-primary-700);
+}
+
+.porcentage{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-primary-600);
+}
+
+.hero__list{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: 16px;
+}
+
+.hero__list-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero__icon-check{
+    font-size: 24px;
+    color: #00b090;
+}
+
+.hero__text-small{
+    font-size: 16px;
+    color: var(--color-primary-700);
+    font-weight: 400;
+}
+
+.hero__icon-question{
+    font-size: 16px;
+    color: var(--color-primary-700);
+}
+
+.hero__timer{
+    margin-bottom: 16px;
+}
+
+.hero__text-medium{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-primary-700);
+}
+
+.hero__text-large{
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-primary-700);
+}
+
+.hero__headline{
+    margin-bottom: 16px;
+}
+
+.hero__text-medium-bold{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-primary-700);
+}
+
+.hero__button-countdown{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 12px;
+}
+
+.hero__button-primary{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    background-color: var(--color-primary-600);
+    border-radius: 8px;
+    padding: 12px 48px;
+}
+
+.hero__countdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-primary-700);
+    background-color: var(--color-primary-400);
+    border-radius: 8px;
+    height: 48px;
+    width: 100%;
+}
+
+.hero__promo{
+    display: flex;
+    gap: 4px;
+    margin-top: 12px;
+}
+
+.hero__icon-check-shield{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: var(--color-primary-700);
+}
+
+.hero__img{
+    width: 100%;
+}
+
+@media (min-width: 480px) and (max-width: 767px){
+    .hero__container{
+        padding: 120px 40px 80px 40px;
+    }
+
+    .hero__title{
+        font-size: 28px;
+    }
+
+    .hero__button-countdown{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hero__countdown{
+        max-width: 160px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .hero__container{
+        padding: 128px 168px 80px 168px;
+    }
+
+        .hero__title{
+        font-size: 28px;
+    }
+
+    .hero__button-countdown{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hero__countdown{
+        max-width: 160px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1919px){
+    .hero__container{
+        padding: 136px 246px 96px 246px;
+    }
+
+    .hero__title{
+        font-size: 36px;
+    }
+
+    .hero__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 35%;
+        max-width: 460px;
+    }
+/* ¿Cómo hago para no tener que poner esos widht-max? Propiedades sacados de la página */
+    .hero__img{
+        width: calc(100vh + 202px);
+        max-width: 880px;
+    }
+
+    .hero__button-countdown{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hero__countdown{
+        max-width: 160px;
+    }
+}
+
+@media (min-width: 1920px) and (min-width: 2560px){
+    .main-menu-container{
+        margin: 0px 226px;
+    }
+
+    .hero__container{
+        padding: 164px 584px 96px 584px;
+    }
+
+        .hero__info{
+        width: 35%;
+        max-width: 460x;
+    }
+
+    .hero__img{
+        width: calc(100vh + 202px);
+        max-width: 880px;
+    }
+}

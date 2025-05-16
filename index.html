@@ -10,97 +10,118 @@
     <header>
         <!-- Navigation Section -->
         <div class="navigation-section">
-            <div class="logo-hostinger">
-                <img class="img-logo-hostinger" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOiM-yvcoRvPw9_ffhCLFynNBRUJzs72mhRCPQ-uWgkDm07rT72ZDcZkKVnPx5nt9v7A&usqp=CAU" alt="Logo Hostinger">
+            <div class="navigation-section__logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOiM-yvcoRvPw9_ffhCLFynNBRUJzs72mhRCPQ-uWgkDm07rT72ZDcZkKVnPx5nt9v7A&usqp=CAU" alt="Logo Hostinger">
             </div>
-            <div class="main-menu-container">
-                <nav class="main-menu-left">
-                    <ul class="main-menu__options">
-                        <li><a class="main-menu__option" href="">Precios</a></li>
-                        <li>
-                            <button class="main-menu__option" href="">Servicios
-                                <i class="bi bi-chevron-down main-menu__icon"></i>
-                            </button>
-                        </li>
-                        <li>
-                            <button class="main-menu__option" href="">Explorar
-                                <i class="bi bi-chevron-down main-menu__icon"></i>    
-                            </button>
-                        </li>
-                        <li>
-                            <button class="main-menu__option" href="">Soporte
-                                <i class="bi bi-chevron-down main-menu__icon"></i>
-                            </button>
-                        </li>
-                        <li><a class="main-menu__option" href="">Horizons</a></li>
-                    </ul>
-                </nav>
-                <div class="main-menu-right">
-                    <button class="language">
-                        <img class="language__img" src="https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/61dfc084-9cfc-466e-7d11-b6e89d23a400/w=1760,sharpen=1" alt="AR">
-                        <span class="language__select">Español</span>
-                    </button>
-                    <a class="main-menu__button" href="">Ingresar</a>
-                </div>
+            <nav class="navigation-section__nav nav">
+                <ul class="nav__main-menu">
+                    <li><a class="nav__entry" href="">Precios</a></li>
+                    <li>
+                        <button class="nav__entry" href="">Servicios
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav__entry" href="">Explorar
+                            <i class="bi bi-chevron-down"></i>    
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav__entry" href="">Soporte
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                    </li>
+                    <li><a class="nav__entry" href="">Horizons</a></li>
+                </ul>
+            </nav>
+            <div class="navigation-section__user">
+                <button class="navigation-section__language language">
+                    <img class="language__img" src="https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/61dfc084-9cfc-466e-7d11-b6e89d23a400/w=1760,sharpen=1" alt="AR">
+                    <span class="language__select">Español</span>
+                </button>
+                <a class="navigation-section__button" href="">Ingresar</a>
             </div>
-            <button class="buton-list">
-                <i class="bi bi-list icon-list"></i>
+            <button class="navigation-section__button-list button-list">
+                <i class="bi bi-list"></i>
             </button>
         </div>
     </header>
     <main>    
         <!-- Hero -->
         <section class="hero">
-            <div class="hero__container">
-                <div class="hero__info">
-                    <div class="hero__heading">
-                        <h1 class="hero__title">Todo lo que necesitás para crear una web</h1>
-                        <p class="hero__subtitle"> 
-                            Hasta
-                            <span class="hero__subtitle porcentage">72%</span>
-                            off en hosting + Creador de webs
-                        </p>
+            <div class="hero__info">
+                <div class="hero__heading">
+                    <h1 class="hero__title">Todo lo que necesitás para crear una web</h1>
+                    <p class="hero__subtitle"> 
+                        Hasta
+                        <span class="hero__subtitle porcentage">72%</span>
+                        off en hosting + Creador de webs
+                    </p>
+                </div>
+                <div class="hero__list">
+                    <div class="hero__list-item">
+                        <i class="bi bi-check2 hero__icon-check"></i>
+                        <span class="hero__text-small">Dominio gratis</span>
+                        <i class="bi bi-question-circle hero__icon-question"></i>
                     </div>
-                    <div class="hero__list">
-                        <div class="hero__list-item">
-                            <i class="bi bi-check2 hero__icon-check"></i>
-                            <span class="hero__text-small">Dominio gratis</span>
-                            <i class="bi bi-question-circle hero__icon-question"></i>
-                        </div>
-                        <div class="hero__list-item">
-                            <i class="bi bi-check2 hero__icon-check"></i>
-                            <span class="hero__text-small">Migración gratis</span>
-                            <i class="bi bi-question-circle hero__icon-question"></i>
-                        </div>
-                        <div class="hero__list-item">
-                            <i class="bi bi-check2 hero__icon-check"></i>
-                            <span class="hero__text-small">Atención al cliente 24/7</span>
-                        </div>
+                    <div class="hero__list-item">
+                        <i class="bi bi-check2 hero__icon-check"></i>
+                        <span class="hero__text-small">Migración gratis</span>
+                        <i class="bi bi-question-circle hero__icon-question"></i>
                     </div>
-                    <div class="hero__price">
-                        <p class="hero__text-medium">
-                            AR$
-                            <span class="hero__text-large">3.899</span>
-                            /mes
-                        </p>
-                    </div>
-                    <div class="hero__timer">
-                    <p class="hero__text-medium-bold">+3 meses gratis</p>   
-                    </div>
-                    <div class="hero__button-countdown">
-                        <a href="" class="hero__button-primary">Empezar ya</a>
-                        <div class="hero__countdown">
-                            <time>03 : 24 : 60 : 60</time>
-                        </div>
-                    </div>
-                    <div class="hero__promo">
-                        <i class="bi bi-shield-check hero__icon-check-shield"></i>
-                        <span class="hero__text-small">Garantía de 30 días: probalo sin cargo</span>
+                    <div class="hero__list-item">
+                        <i class="bi bi-check2 hero__icon-check"></i>
+                        <span class="hero__text-small">Atención al cliente 24/7</span>
                     </div>
                 </div>
-                <div class="hero__image">
-                    <img class="hero__img" src="https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/5a9a19e7-fef4-4cf6-65b1-01001ef95f00/w=1280,sharpen=1" alt="Todo lo que necesitás para crear una página web">
+                <div class="hero__price">
+                    <p class="hero__text-medium">
+                        AR$
+                        <span class="hero__text-large">3.899</span>
+                        /mes
+                    </p>
                 </div>
+                <div class="hero__timer">
+                <p class="hero__text-medium-bold">+3 meses gratis</p>   
+                </div>
+                <div class="hero__button-countdown">
+                    <a href="" class="hero__button-primary">Empezar ya</a>
+                    <div class="hero__countdown">
+                        <time>03 : 24 : 60 : 60</time>
+                    </div>
+                </div>
+                <div class="hero__promo">
+                    <i class="bi bi-shield-check hero__icon-check-shield"></i>
+                    <span class="hero__text-small">Garantía de 30 días: probalo sin cargo</span>
+                </div>
+            </div>
+            <img class="hero__img" src="https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/5a9a19e7-fef4-4cf6-65b1-01001ef95f00/w=1280,sharpen=1" alt="Todo lo que necesitás para crear una página web">
+        </section>
+        <!-- Section Services -->
+        <section class="section-services">
+            <div class="section-services__header">
+                <h2 class="section-services__title">Migración de sitios web simplificada</h2>
+                <p class="section-services__text-small">¿Actualmente alojás tu sitio con otro proveedor? Unite a los más de 3 millones de propietarios de webs que accedieron a un hosting rápido, seguro y confiable aquí en Hostinger. Nuestro equipo de expertos se puede encargar de la migración mientras tu sitio permanece en funcionamiento en todo momento. Sí, leíste bien: sin tiempo de inactividad, sin pérdida de datos y sin problemas.</p>
+            </div>
+            <div class="section-services__cards-conteiner">
+                <article class="section-services__card-services card-services">
+                    <i class="bi bi-list-ul"></i>
+                    <p class="card-services__text-large">3 simples pasos</p>
+                    <p class="card-services__text-small">Solo tenés que elegir tu plan, completar el formulario de solicitud de migración y enviarlo. Eso es todo.</p>
+                </article>
+                <article class="card-services">
+                    <i class="bi bi-lightning-charge"></i>
+                    <p class="card-services__text-large">Rápido y seguro</p>
+                    <p class="card-services__text-small">El 95% de las webs migran en menos de 20 minutos. El 5% restante, más rápido que el promedio del sector ¡Y tu sitio web permanece activo todo el tiempo!</p>
+                </article>
+                <article class="card-services">
+                    <i class="bi bi-check-circle"></i>
+                    <p class="card-services__text-large">Gratis</p>
+                    <p class="card-services__text-small">No importa si tenés una web o 100, migrarlas a Hostinger es gratis con todos nuestros planes.</p>
+                </article>
+            </div>
+            <div class="section-services__button">
+                <a href="" class="section-services__button-primary">Empezar</a>
             </div>
         </section>
     </main>

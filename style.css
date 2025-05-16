@@ -295,7 +295,7 @@ header{
     color: var(--color-primary-700);
 }
 
-.hero__img{
+.hero img{
     width: 100%;
 }
 
@@ -410,6 +410,10 @@ header{
         line-height: 40px;
     }
 
+    .hero__text-large{
+        font-size: 40px;
+    }
+
     .hero__button-countdown{
         display: flex;
         flex-direction: row;
@@ -451,6 +455,7 @@ header{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         max-width: 1208px;
         padding: 36px 80px 96px 80px;
         margin-left: auto;
@@ -505,8 +510,12 @@ header{
         max-width: 160px;
     }
 
-    .hero__img{
-        width: 50%;
+    .hero img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 432px;
+        height: fit-content;
     }
 
 /*     .hero__img{ ASÍ ESTÁ EN HOSTINGER
@@ -549,6 +558,11 @@ header{
 
     .hero__info{
         width: 33%;
+    }
+
+    .hero img{
+        width: 880px;
+        height: 576px;
     }
 
 /*     .hero__img{ ASÍ ESTÁ EN HOSTINGER

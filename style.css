@@ -639,11 +639,15 @@ footer{
         font-size: 20px;
         margin-bottom: 24px;
     }
-    
+
     .porcentage{
         font-size: 20px;
     }
     
+    .hero__list{
+        margin-bottom: 24px;
+    }
+
     .hero__text-large{
         font-size: 48px;
     }
@@ -702,7 +706,7 @@ footer{
         justify-content: space-between;
         gap: 16px;
         max-width: 1208px;
-        padding: 56px 40px;
+        padding: 50px 40px 40px 40px;
     }
 
     .footer__info{
@@ -843,6 +847,6 @@ footer{
     }
 
     .hero__title{
-        margin-right: 24px;
+        margin-right: 32px;
     }
 }
